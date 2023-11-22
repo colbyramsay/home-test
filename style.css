@@ -1,0 +1,133 @@
+/* {
+  border: 1px solid pink;
+}*/
+
+body {
+    margin: 0;
+    min-height: 100vh; /* initial body height = 100% of vh: "viewport height" */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: monospace;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    height: 54px;
+    font-size: 18px;
+    font-weight: normal;
+    background: none;
+    padding-left: 27px;
+    padding-right: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-links {
+    display: flex;
+    gap: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: hotpink;
+}
+
+a:hover {
+    color: gainsboro;
+}
+
+button {
+    color: white;
+    background-color: hotpink;
+    border-radius: 3px;
+    border: none;
+}
+ 
+@media (hover: hover) { 
+    button:hover { 
+        /*Add hover effect to button 
+        on hover enabled devices*/ 
+        background-color: gainsboro;
+    } 
+} 
+
+.lower-header {
+    font-weight: normal;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 117px;
+}
+
+.pink-text {
+    color: hotpink;
+    font-style: oblique;
+}
+
+.highlight-text {
+    background-color: white;
+    font-size: large;
+    border-radius: 3px;
+}
+
+.mid-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 36px 9px 36px;
+}
+
+.hero-image {
+    background-color: gainsboro;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+}
+
+.hello-image {
+    background-image: url("./img/colbyramsay-about-me-1024px.gif");
+}
+
+.design-image {
+    background-image: repeating-radial-gradient(black, white 18%, black 36%);
+}
+
+.music-image {
+    background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
+}
+
+.footer {
+    height: 72px;
+    font-size: large;
+    font-weight: normal;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.footer-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
